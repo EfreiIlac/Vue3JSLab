@@ -19,14 +19,13 @@
 
 <script setup>
   import CartComponent from './components/CartComponent.vue';
-
 </script>
 
 <style scoped>
   .container {
     width: 100%;
     min-height: 100vh;
-    height: 100%;
+    height: max-content;
     background-color: #082118;
   }
 

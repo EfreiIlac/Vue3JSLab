@@ -14,7 +14,7 @@
       <div class="total">
         <p>Total: € {{total}}</p>
       </div>
-      <button class="pay">Pay now</button>
+      <router-link to="/pay"><button class="pay">Pay now</button></router-link>
     </div>
   </button>
 </template>
@@ -31,7 +31,6 @@ const total = ref(store.getters.cartTotal)
 watch(store.state.cart, (newCart) => {
   cart.value = newCart
   total.value = store.getters.cartTotal
-  console.log(total.value)
 })
 
 const visible = ref(false);
