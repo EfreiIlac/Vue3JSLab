@@ -6,13 +6,13 @@
       />
     </svg>
     <div class="cart-content" :class="visible ? 'visible' : ''">
-      <div class="item" v-for="(item, idx) in props.items" :key="idx">
+      <div class="item" v-for="(item, idx) in cart" :key="idx">
         <img class="item-image" :src="item.image" :alt="item.name" />
         <h3 class="item-name">{{ item.name }}</h3>
         <p class="item.price">€ {{ item.price }} x {{item.quantity}} : €{{(item.price*item.quantity)}}</p>
       </div>
       <div class="total">
-        <p>Total: € {{items.reduce((a,b)=> a + b.quantity * b.price, 0)}}</p>
+        <p>Total: € {{total}}</p>
       </div>
       <button class="pay">Pay now</button>
     </div>
@@ -20,14 +20,19 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
+import { useStore } from "vuex";
 
-const props = defineProps({
-  items: {
-    type: Array,
-    required: true,
-  },
-});
+const store = useStore();
+
+const cart = ref(store.state.cart)
+const total = ref(store.getters.cartTotal)
+
+watch(store.state.cart, (newCart) => {
+  cart.value = newCart
+  total.value = store.getters.cartTotal
+  console.log(total.value)
+})
 
 const visible = ref(false);
 
