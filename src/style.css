@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Clash Display variable';
+  src: url(./assets/fonts/ClashDisplay-Variable.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: 'Clash Display variable';
+  color: #ebfaf4;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #a9ead2;
+}
