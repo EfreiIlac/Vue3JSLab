@@ -48,7 +48,7 @@
           <h2>Payment Informations</h2>
           <div class="paiement-block">
             <div class="paiement-form-input">
-              <label for="card">Card</label>
+              <label for="card">Card Number</label>
               <input type="text" id="card" />
             </div>
             <div class="paiement-form-input">
