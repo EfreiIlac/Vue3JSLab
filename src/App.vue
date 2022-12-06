@@ -2,7 +2,7 @@
   <div class="container">
     <header>
       <router-link to="/">
-        <h1>Sneack'Lot</h1>
+        <h1>Sneak'Lot</h1>
       </router-link>
       <nav>
         <router-link to="/"><a>home</a></router-link>
