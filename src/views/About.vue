@@ -23,16 +23,22 @@
 
       <div class="creators-container">
         <div class="creator-box">
-          <img src="../assets/images/pm.jpeg" alt="">
+          <img class="perso-img" src="../assets/images/pm.jpeg" alt="">
           <p>Pierre-Marie</p>
+          <p><a href="https://www.linkedin.com/in/pierre-marie-herrburger--pietri/"><img class="linkedin"
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a></p>
         </div>
         <div class="creator-box">
-          <img src="../assets/images/anas.PNG" alt="">
+          <img class="perso-img" src="../assets/images/anas.PNG" alt="">
           <p>Anas</p>
+          <p><a href="https://linkedin.com/in/anas-boujatouy"><img class="linkedin"
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a></p>
         </div>
         <div class="creator-box">
-          <img src="../assets/images/augustin.jpg" alt="">
+          <img class="perso-img" src="../assets/images/augustin.jpg" alt="">
           <p>Augustin</p>
+          <p><a href="https://linkedin.com/in/augustin-herbert"><img class="linkedin"
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a></p>
         </div>
       </div>
 
@@ -87,12 +93,17 @@
   text-align: center;
 }
 
-.creator-box img {
+
+.perso-img {
   margin-top: -75px;
   width: 150px;
   height: 150px;
   border-radius: 9999999px;
   object-fit: cover;
+}
 
+.linkedin {
+  width: 30px;
+  height: 30px;
 }
 </style>
