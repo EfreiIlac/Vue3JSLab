@@ -72,22 +72,23 @@ const addToCart = (sneaker) => {
 
 <style scoped>
 .sneakers-container {
-  display: flex;
-  flex-wrap: no-wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  /* flex-wrap: no-wrap; */
   gap: 1rem;
-  width: 100%;
-  overflow-x: scroll;
+  width: calc(100% - 1rem);
+  /* overflow-x: scroll; */
   padding-bottom: 8px;
 }
 
-.sneakers-container::-webkit-scrollbar {
+::-webkit-scrollbar {
   padding-top: 4px;
   background-color: hsl(158, 61%, 90%);
   border-radius: 8px;
-  height: 10px;
+  width: 10px;
 }
 
-.sneakers-container::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: hsl(158, 61%, 70%);
   border-radius: 8px;
 }

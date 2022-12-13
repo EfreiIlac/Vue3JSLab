@@ -39,6 +39,7 @@
     background-color: #D6F5EA;
     min-width: 256px;
     max-width: 256px;
+    height: 360px;
     aspect-ratio: 1;
     border-radius: 8px;
     padding: 1rem;

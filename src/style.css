@@ -33,3 +33,15 @@ h6 {
   color: #32cd94;
   background-color: #ebfaf4;
 }
+
+::-webkit-scrollbar {
+  padding-top: 4px;
+  background-color: hsl(158, 61%, 90%);
+  border-radius: 8px;
+  width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(158, 61%, 70%);
+  border-radius: 8px;
+}
